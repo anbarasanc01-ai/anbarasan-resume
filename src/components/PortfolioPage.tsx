@@ -6,6 +6,7 @@ import {
   Download,
   Mail,
   Moon,
+  Phone,
   Sun,
 } from 'lucide-react'
 import { profile } from '../data/profile'
@@ -547,6 +548,12 @@ export function PortfolioPage({ recruiterMode, onToggleRecruiter }: PortfolioPag
               className="inline-flex items-center gap-2 rounded-xl bg-[var(--color-accent-emerald)] px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
             >
               <Mail className="h-4 w-4" /> Email
+            </a>
+            <a
+              href={`tel:${profile.phone.replace(/\s/g, '')}`}
+              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-sm font-medium hover:bg-secondary"
+            >
+              <Phone className="h-4 w-4" /> {profile.phone}
             </a>
             <a
               href={profile.linkedin}
