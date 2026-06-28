@@ -12,7 +12,7 @@ export const profile = {
   yearsExperience: 5,
 
   summary:
-    'Senior Backend Engineer with 5+ years building distributed enterprise SaaS on Ruby on Rails, Sidekiq, Redis, and Kafka. Team lead for 4 engineers at DispatchTrack on AI-operable platform (MCP, domain agents, Jira-to-PR automation) and Rails 2 to Rails 8 migration, consolidating Delayed Job, Resque, and RabbitMQ into Sidekiq across ~80 background workloads. Experience across logistics, healthcare, fintech, and fleet platforms.',
+    'Senior Backend Engineer with 5+ years building distributed enterprise SaaS on Ruby on Rails, Sidekiq, Redis, and Kafka. Team lead for 4 engineers at DispatchTrack on AI-operable platform (MCP, domain agents, Jira-to-PR automation) and Rails 2 to Rails 8 migration, consolidating Delayed Job, Resque, and RabbitMQ into Sidekiq across ~80 background workloads. Experience across logistics, healthcare, fintech, and fleet platforms. I use AI-assisted workflows in day-to-day platform engineering.',
 
   metrics: [
     { label: 'Years', value: '5+' },
