@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0c10"/>
+      <stop offset="100%" style="stop-color:#12151c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="4" height="80" fill="url(#accent)" rx="2"/>
+  <text x="80" y="110" font-family="system-ui,sans-serif" font-size="52" font-weight="700" fill="#f1f5f9">Anbarasan C</text>
+  <text x="80" y="165" font-family="system-ui,sans-serif" font-size="28" fill="#10b981">Senior Backend Engineer</text>
+  <text x="80" y="220" font-family="system-ui,sans-serif" font-size="22" fill="#94a3b8">Rails · Sidekiq · Kafka · AI Platform · Team Lead</text>
+  <text x="80" y="280" font-family="ui-monospace,monospace" font-size="18" fill="#64748b">5+ yrs · DispatchTrack · Chennai, India</text>
+  <rect x="80" y="520" width="1040" height="1" fill="#1e293b"/>
+  <text x="80" y="560" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">anbarasanc01@gmail.com · linkedin.com/in/anbarasanc</text>
+</svg>
