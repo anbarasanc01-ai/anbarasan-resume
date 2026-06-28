@@ -6,8 +6,8 @@ export const profile = {
   email: 'anbarasanc01@gmail.com',
   phone: '+91 8939673184',
   linkedin: 'https://linkedin.com/in/anbarasanc',
-  github: 'https://github.com/anbarasanc', // update if different
-  siteUrl: 'https://anbarasan.dev', // set to your deployed URL
+  github: 'https://github.com/anbarasanc01-ai',
+  siteUrl: 'https://anbarasan-resume.vercel.app',
   pdfUrl: '/Anbarasan_Resume_FInal.pdf',
   yearsExperience: 5,
 
