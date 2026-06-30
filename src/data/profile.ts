@@ -12,7 +12,7 @@ export const profile = {
   yearsExperience: 5,
 
   summary:
-    'Senior Backend Engineer with 5+ years building distributed enterprise SaaS on Ruby on Rails, Sidekiq, Redis, and Kafka. Team lead for 4 engineers at DispatchTrack on AI-operable platform (MCP, domain agents, Jira-to-PR automation) and Rails 2 to Rails 8 migration, consolidating Delayed Job, Resque, and RabbitMQ into Sidekiq across ~80 background workloads. Experience across logistics, healthcare, fintech, and fleet platforms. I use AI-assisted workflows in day-to-day platform engineering.',
+    'Senior Backend Engineer with 5+ years on distributed enterprise SaaS (Rails, Sidekiq, Redis, Kafka). Team lead for 4 at DispatchTrack—owning Rails 2→8 modernization, Sidekiq consolidation (~80 workloads), and AI-assisted engineering platform (Jira-to-PR automation). Logistics, healthcare, fintech, and fleet.',
 
   metrics: [
     { label: 'Years', value: '5+' },
@@ -42,10 +42,9 @@ export const profile = {
       category: 'AI Platform',
       items: [
         'LLM tool calling',
-        'MCP',
+        'MCP integrations',
         'Agent workflows',
-        'Domain playbooks',
-        'Guardrail layering',
+        'Governed SDLC automation',
       ],
     },
     {
@@ -80,11 +79,11 @@ export const profile = {
       project: 'B2B & B2C Enterprise logistics SaaS',
       highlight: true,
       bullets: [
-        'Built AI-operable harness with AGENTS.md manifest, MCP integrations (Jira, Bitbucket, Confluence), governed tool-callable surfaces, and Explore-Planner-Generator-Evaluator agent layers.',
-        'Automated Jira-to-merged-PR pipeline with RSpec, Vitest, Playwright validation, AI diff review, changelog/ADR, Overcommit hooks, and Bitbucket CI.',
-        'Rewrote Rails 2 monolith into Rails 8, migrating 50+ controller surfaces into domain-driven modules with parallel-stack coexistence during live cutover.',
-        'Consolidated Delayed Job, Resque, and RabbitMQ into Sidekiq Pro across ~80 workloads; 3-tier queue isolation (realtime / imports / background), cache twin invalidation, and JWT routing APIs; building event-driven automation on Kafka.',
-        'Lead a team of 4 engineers; own sprint planning, backlog prioritization, and agile delivery for migration and platform engineering work.',
+        'Built governed AI-assisted platform with LLM integrations (Jira, Bitbucket, Confluence)—automating ticket-to-code with test-gated, reviewable changes.',
+        'Automated Jira-to-merged-PR with RSpec, Vitest, Playwright, AI diff review, and Bitbucket CI—reducing SDLC handoffs from ticket to release.',
+        'Led Rails 2→8 migration of 50+ controllers into domain modules with parallel-stack live cutover—incremental rollout without big-bang downtime.',
+        'Consolidated Delayed Job, Resque, and RabbitMQ into Sidekiq Pro (~80 workloads); 3-tier queue isolation and cache twin invalidation—improving async reliability; extending to Kafka.',
+        'Lead team of 4; own sprint planning, backlog prioritization, and technical direction for platform modernization.',
       ],
     },
     {
@@ -95,8 +94,8 @@ export const profile = {
       period: 'Nov 2023 – May 2024',
       project: 'Thoroughcare (Healthcare care coordination)',
       bullets: [
-        'Engineered Rails 6.1 + PostgreSQL backend for care-coordination workflows; designed Sidekiq async pipelines to decouple long-running clinical operations from synchronous request paths under peak load.',
-        'Tuned PostgreSQL performance with pgHero and production observability (Sentry, New Relic, Grafana) on Aptible-hosted infrastructure.',
+        'Built Rails 6.1 + PostgreSQL care-coordination backend; Sidekiq pipelines isolate long clinical jobs from sync paths—keeping peak-load workflows responsive.',
+        'Tuned PostgreSQL with pgHero and observability (Sentry, New Relic, Grafana) on Aptible—improving reliability under clinical peak load.',
       ],
     },
     {
@@ -107,8 +106,8 @@ export const profile = {
       period: 'Feb 2023 – Oct 2023',
       project: 'Presto Web App (Marketplace SaaS), Presto Finance (Fintech)',
       bullets: [
-        'Designed Rails 6 multi-tenant SaaS backend with MongoDB, REST APIs, and idempotent webhook handlers syncing Zoho Books, CRM, and Inventory on AWS.',
-        'Developed Rails 5 fintech APIs with JWT/OAuth and Smallcase Gateway; tuned MongoDB and MySQL query paths for transaction-heavy operations.',
+        'Rails 6 multi-tenant SaaS with idempotent Zoho webhook sync (Books, CRM, Inventory) on AWS—consistent billing and inventory across tenants.',
+        'Rails 5 fintech APIs (JWT/OAuth, Smallcase); tuned MongoDB/MySQL for transaction-heavy investment flows.',
       ],
     },
     {
@@ -119,8 +118,8 @@ export const profile = {
       period: 'Sep 2022 – Jan 2023',
       project: 'Upshift Cars, Fleetwaze, Budget Countertops',
       bullets: [
-        'Led backend delivery for Upshift Cars (Rails 6, PostgreSQL, Stripe, Chekr) and Fleetwaze truck logistics APIs (Rails 3.2) with Docker deployment.',
-        'Designed stateful trip lifecycle workflows with AASM and Sidekiq for high-volume booking and status transitions.',
+        'Led backend for Upshift Cars (Rails 6, Stripe, Chekr) and Fleetwaze logistics APIs (Rails 3.2) with Docker—shipping rental and fleet booking to production.',
+        'Designed AASM + Sidekiq trip lifecycle workflows for high-volume bookings—reliable concurrent state transitions under load.',
       ],
     },
     {
@@ -131,8 +130,8 @@ export const profile = {
       period: 'Sep 2020 – Aug 2022',
       project: 'Growpath (Legal case management)',
       bullets: [
-        'Built Rails 5.1.7 + PostgreSQL backend for legal case management with filing workflows and third-party integrations (Documo, Nylas, mFax).',
-        'Designed facade-based data access layers to optimize high-volume matter and document retrieval across complex schemas.',
+        'Built Rails 5.1 legal case-management backend with filing workflows and integrations (Documo, Nylas, mFax)—supporting high-volume matter operations.',
+        'Facade-based data access over complex schemas—faster matter and document retrieval for large caseloads.',
       ],
     },
   ],
@@ -155,11 +154,11 @@ export const profile = {
       problem:
         'Legacy Rails 2 monolith blocked modern features, security patches, and team velocity. Full rewrite risked production downtime on a live B2B/B2C logistics platform.',
       approach:
-        'Strangler-fig migration: domain-driven modules in Rails 8 running parallel to the legacy stack. 50+ controller surfaces migrated incrementally with coexistence routing during live cutover.',
+        'Strangler-fig migration: domain-driven modules in Rails 8 running parallel to the legacy stack. 50+ controller surfaces migrated incrementally with coexistence routing—shipping production cutovers without a big-bang release.',
       outcomes: [
         '50+ controller surfaces migrated into domain modules',
-        'Parallel-stack routing — zero big-bang cutover',
-        'Team of 4 delivering sprint-by-sprint migration',
+        'Parallel-stack routing enabled incremental live cutover',
+        'Team of 4 delivering sprint-by-sprint migration with continued feature delivery',
       ],
       stack: ['Ruby on Rails 2.x', 'Rails 8', 'PostgreSQL', 'Redis', 'RSpec'],
       diagram: `┌─────────────────┐         ┌────────────────────────────────────┐
@@ -178,11 +177,11 @@ export const profile = {
       problem:
         'Background processing split across Delayed Job, Resque, and RabbitMQ — fragmented observability, inconsistent retry semantics, and operational overhead.',
       approach:
-        'Unified on Sidekiq Pro with 3-tier queue isolation (realtime / imports / background), cache twin invalidation, JWT routing APIs, and Kafka for event-driven automation.',
+        'Unified on Sidekiq Pro with 3-tier queue isolation (realtime / imports / background), cache twin invalidation, JWT routing APIs, and Kafka for event-driven automation—simplifying ops across a single async substrate.',
       outcomes: [
         '~80 workloads consolidated into Sidekiq Pro',
-        '3-tier queue isolation by latency SLA',
-        'Kafka pipeline for event-driven automation',
+        '3-tier queue isolation reduced cross-workload contention',
+        'Clearer operability and path to Kafka event automation',
       ],
       stack: ['Sidekiq Pro', 'Redis', 'Kafka', 'Ruby', 'JWT APIs'],
       diagram: `  Delayed Job ──┐
@@ -200,13 +199,13 @@ export const profile = {
       company: 'DispatchTrack',
       role: 'Platform / AI Engineering',
       problem:
-        'Engineering workflow scattered across Jira, Bitbucket, Confluence, and CI — manual handoffs slowed delivery and made AI assistance unsafe without guardrails.',
+        'Engineering workflow scattered across Jira, Bitbucket, Confluence, and CI—manual handoffs slowed delivery and made AI-assisted changes risky without governance.',
       approach:
-        'Built AI-operable harness: AGENTS.md manifest, MCP tool integrations, governed callable surfaces, and Explore-Planner-Generator-Evaluator agent layers. Automated Jira-to-merged-PR with full test gates.',
+        'Built AI-assisted engineering platform with governed LLM tool integrations and agent workflows. Automated Jira-to-merged-PR with RSpec, Vitest, Playwright, AI diff review, and CI gates.',
       outcomes: [
-        'MCP integrations: Jira, Bitbucket, Confluence',
-        'Jira → merged PR with RSpec, Vitest, Playwright gates',
-        'E-P-G-E agent layers with guardrail layering',
+        'Jira ticket to merged PR with governed tool access',
+        'RSpec, Vitest, and Playwright gating every automated change',
+        'Reduced manual SDLC handoffs while keeping changes reviewable',
       ],
       stack: ['MCP', 'LLM tool calling', 'RSpec', 'Vitest', 'Playwright', 'Bitbucket CI'],
       diagram: `  Jira ticket
